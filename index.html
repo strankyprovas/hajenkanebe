@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hájenka Nebe — ubytování na samotě, Kašperské Hory, Šumava</title>
+<meta name="description" content="Hájenka Nebe — místo, kde se zastaví čas. Ubytování v 5 apartmánech na samotě uprostřed šumavských lesů, 876 m n. m., nejvýše položený dům v Kašperských Horách. Ohniště, gril, výhledy na Šumavu.">
+<link rel="canonical" href="https://hajenkanebe.cz/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LodgingBusiness","name":"Hájenka Nebe","description":"Ubytování v 5 apartmánech na samotě uprostřed šumavských lesů u Kašperských Hor, 876 m n. m.","address":{"@type":"PostalAddress","streetAddress":"Nebe 203","addressLocality":"Kašperské Hory","postalCode":"341 92","addressCountry":"CZ"},"geo":{"@type":"GeoCoordinates","latitude":49.14394,"longitude":13.55483},"telephone":"+420737618999","email":"hajenkanebe@gmail.com","petsAllowed":true,"numberOfRooms":5}
+</script>
+<style>
+:root{--les:#2e4030;--salvej:#7d8f6f;--krem:#f6f2e9;--krem2:#eee8da;--karamel:#b07b3e;--hned:#3c3327;--text:#4c4a3f;--linka:#ddd5c2}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito Sans',sans-serif;background:var(--krem);color:var(--text);line-height:1.75;font-size:16.5px}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;color:var(--hned);font-weight:600;line-height:1.15}
+.wrap{max-width:1160px;margin:0 auto;padding:0 5%}
+section{padding:5rem 0}
+.eyebrow{font-size:.74rem;letter-spacing:.26em;text-transform:uppercase;color:var(--karamel);font-weight:700;margin-bottom:.8rem}
+.title{font-size:clamp(1.9rem,3.8vw,2.8rem);margin-bottom:1rem}
+.title em{font-style:italic;color:var(--les)}
+.lead{max-width:660px;font-size:1.04rem}
+.btn{display:inline-block;background:var(--les);color:#fff;text-decoration:none;font-weight:700;font-size:.95rem;padding:.9rem 2.1rem;border-radius:999px;transition:.2s}
+.btn:hover{background:#243323}
+.btn.line{background:transparent;border:1.6px solid var(--les);color:var(--les)}
+.btn.line:hover{background:var(--les);color:#fff}
+[data-r]{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+[data-r].vis{opacity:1;transform:none}
+header{position:fixed;top:0;left:0;right:0;z-index:90;background:rgba(246,242,233,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--linka)}
+.nav{max-width:1160px;margin:0 auto;padding:.65rem 5%;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+.brand img{height:52px;width:52px;object-fit:cover;border-radius:50%;background:#fff}
+.brand b{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--hned);letter-spacing:.06em}
+.brand small{display:block;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--karamel)}
+nav.m{display:flex;gap:.2rem}
+nav.m a{text-decoration:none;color:var(--text);font-size:.85rem;padding:.4rem .7rem;border-radius:999px}
+nav.m a:hover{background:var(--krem2);color:var(--hned)}
+.tel{background:var(--les);color:#fff!important;font-weight:700}
+.ham{display:none;background:none;border:1px solid var(--linka);border-radius:10px;padding:.4rem .6rem;font-size:1.1rem;cursor:pointer}
+#mnav{display:none}
+#mnav.open{display:block;background:var(--krem);border-bottom:1px solid var(--linka);padding:.5rem 5% 1rem}
+#mnav a{display:block;padding:.5rem 0;text-decoration:none;color:var(--hned);border-bottom:1px dashed var(--linka)}
+#hero{position:relative;min-height:92vh;display:grid;place-items:center;text-align:center;color:#fff;padding:7rem 5% 4rem}
+#hero::before{content:"";position:absolute;inset:0;background:url('photos/dron-leto.jpg') center/cover no-repeat}
+#hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,38,28,.45),rgba(28,38,28,.62))}
+.hero-in{position:relative;z-index:2;max-width:780px}
+.hero-in h1{color:#fff;font-size:clamp(2.6rem,6vw,4.4rem);font-weight:500}
+.hero-claim{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.2rem,2.4vw,1.7rem);color:#ead9b8;margin:.6rem 0 1.4rem}
+.hero-sub{max-width:620px;margin:0 auto 2rem;opacity:.95}
+.badges{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-bottom:2.1rem}
+.badges span{border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:.32rem .95rem;font-size:.8rem}
+.pas{background:var(--les);color:#e9e4d2}
+.pas .grid4{display:grid;grid-template-columns:repeat(4,1fr)}
+.pas .it{padding:1.6rem 1.2rem;text-align:center;border-right:1px solid rgba(255,255,255,.14)}
+.pas .it:last-child{border-right:0}
+.pas b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:#fff}
+.pas span{font-size:.85rem;opacity:.8}
+.oh-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center}
+.oh-grid img{border-radius:18px;box-shadow:0 22px 50px rgba(46,64,48,.22)}
+.kgrid{display:grid;gap:1.1rem;margin-top:2.4rem;align-items:stretch}
+.kgrid.c5{grid-template-columns:repeat(5,1fr)}
+.kgrid.c3{grid-template-columns:repeat(3,1fr)}
+.kgrid.c4{grid-template-columns:repeat(4,1fr)}
+.k{background:#fff;border:1px solid var(--linka);border-radius:16px;overflow:hidden;box-shadow:0 12px 30px rgba(60,51,39,.08);display:flex;flex-direction:column;transition:box-shadow .25s}
+.k:hover{box-shadow:0 18px 40px rgba(46,64,48,.16)}
+.k-h{background:linear-gradient(150deg,var(--les),#405a40);padding:1rem 1.15rem}
+.k-h h3{color:#fff;font-size:1.3rem;margin:0;display:flex;align-items:center;gap:.55rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.k-h .em{font-size:1.05rem}
+.k-h .sub{display:block;color:#e8d5ae;font-family:'Nunito Sans',sans-serif;font-weight:700;font-size:.68rem;letter-spacing:.09em;text-transform:uppercase;margin-top:.3rem}
+.k p{font-size:.88rem;margin:.85rem 1.15rem 1.15rem;flex:1}
+.intgal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:235px;gap:.8rem;margin-top:2rem}
+.intgal img{width:100%;height:100%;object-fit:cover;border-radius:14px;transition:.3s}
+.intgal img:hover{transform:scale(1.02)}
+.intgal .big{grid-column:span 2;grid-row:span 2}
+@media(max-width:900px){.intgal{grid-template-columns:1fr 1fr;grid-auto-rows:200px}.intgal .big{grid-column:span 2}}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:.7rem;margin-top:2.4rem}
+.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;transition:.3s;cursor:pointer}
+.gal img:hover{transform:scale(1.025)}
+.gal .w2{grid-column:span 2;aspect-ratio:auto;height:100%}
+.band{position:relative;min-height:46vh;background:url('photos/zapad-nebe.jpg') center/cover fixed;display:grid;place-items:center;text-align:center;padding:4rem 5%}
+.band::before{content:"";position:absolute;inset:0;background:rgba(30,25,18,.45)}
+.band p{position:relative;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.5rem,3.2vw,2.3rem);color:#f3ead2;max-width:760px}
+.cen{max-width:860px;margin:2.2rem auto 0;background:#fff;border:1px solid var(--linka);border-radius:18px;overflow:hidden}
+.cr{display:flex;justify-content:space-between;gap:1rem;padding:1.05rem 1.6rem;border-bottom:1px solid var(--krem2);font-size:.95rem}
+.cr:last-child{border-bottom:0}
+.cr b{color:var(--hned)}
+.pozn{font-size:.88rem;color:#8d8672;font-style:italic}
+.kont-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.6rem;margin-top:2.2rem;align-items:start}
+.kont-grid iframe{width:100%;height:330px;border:0;border-radius:16px}
+.ku{margin-bottom:1rem}
+.ku b{color:var(--hned)}
+footer{background:var(--hned);color:#cfc7b2;padding:3rem 5% 2rem;text-align:center;font-size:.9rem}
+footer a{color:#e8dfc6}
+.center{text-align:center}
+.center .lead{margin:0 auto}
+@media(max-width:1100px){.kgrid.c5{grid-template-columns:repeat(3,1fr)}.kgrid.c4,.kgrid.c3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){
+  nav.m,.tel{display:none}.ham{display:block}
+  .kgrid.c5{grid-template-columns:1fr 1fr}
+  .oh-grid,.kont-grid{grid-template-columns:1fr}
+  .pas .grid4{grid-template-columns:1fr 1fr}
+  .gal{grid-template-columns:1fr 1fr}
+  .band{background-attachment:scroll}
+  section{padding:3.6rem 0}
+}
+@media(max-width:560px){.kgrid.c5,.kgrid.c4,.kgrid.c3{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){[data-r]{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="#" class="brand"><img src="photos/logo.jpg" alt="Hájenka Nebe — logo"><span><b>Hájenka Nebe</b><small>Místo, kde se zastaví čas</small></span></a>
+    <nav class="m">
+      <a href="#onas">O hájence</a><a href="#apartmany">Apartmány</a><a href="#galerie">Galerie</a><a href="#okoli">Okolí</a><a href="#cenik">Ceník</a><a href="#kontakt">Kontakt</a><a class="tel" href="tel:+420737618999">737 618 999</a>
+    </nav>
+    <button class="ham" onclick="document.getElementById('mnav').classList.toggle('open')" aria-label="Menu">☰</button>
+  </div>
+  <div id="mnav">
+    <a href="#onas">O hájence</a><a href="#apartmany">Apartmány</a><a href="#galerie">Galerie</a><a href="#okoli">Okolí</a><a href="#cenik">Ceník</a><a href="#kontakt">Kontakt</a><a href="tel:+420737618999">737 618 999</a>
+  </div>
+</header>
+
+<section id="hero">
+  <div class="hero-in">
+    <div class="eyebrow" style="color:#ead9b8" data-r>Šumava · 876 m n. m. · na samotě</div>
+    <h1 data-r>Hájenka Nebe</h1>
+    <p class="hero-claim" data-r>— místo, kde se zastaví čas —</p>
+    <p class="hero-sub" data-r>Více než sto let stará hájenka uprostřed šumavských lesů nad Kašperskými Horami. Pět apartmánů, ticho, výhledy na Huťskou horu i Poledník — a večer nebe plné hvězd.</p>
+    <div class="badges" data-r><span>5 apartmánů · 18 lůžek</span><span>Ohniště &amp; gril</span><span>Mazlíčci vítáni</span><span>WiFi zdarma</span></div>
+    <div data-r style="display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap"><a href="#kontakt" class="btn">Rezervovat pobyt</a><a href="#apartmany" class="btn line" style="border-color:#fff;color:#fff">Prohlédnout apartmány</a></div>
+  </div>
+</section>
+
+<div class="pas"><div class="wrap grid4">
+  <div class="it"><b>876 m n. m.</b><span>nejvýše položený dům v Kašperských Horách</span></div>
+  <div class="it"><b>100+ let</b><span>historie — bývalý zájezdní hostinec a hájovna</span></div>
+  <div class="it"><b>Na samotě</b><span>uprostřed lesů, žádní sousedé</span></div>
+  <div class="it"><b>3 km</b><span>do Kašperských Hor</span></div>
+</div></div>
+
+<section id="onas">
+  <div class="wrap oh-grid">
+    <div data-r>
+      <div class="eyebrow">O hájence</div>
+      <h2 class="title">Samota, kde je slyšet <em>jen les</em></h2>
+      <p>Hájenka Nebe stojí na konci cesty — dál už je jen les. Přes sto let stará budova, původním německým názvem <strong>Himmelreich</strong>, sloužila kdysi jako zájezdní hostinec, hájenka a konírna. Dnes nabízí pohodlné ubytování těm, kdo chtějí na pár dní vypnout: bez provozu, bez sousedů, s výhledem na šumavské hřebeny.</p>
+      <p style="margin-top:.8rem"><strong>Rodinné ubytování, které naše rodina Hailů provozuje už 34 let</strong> — a je to znát na každém detailu.</p>
+      <p style="margin-top:.8rem">Ráno vás probudí ticho a pasoucí se koně pod okny, večer posezení u ohniště a nebe plné hvězd — jsme daleko od světel měst. A jméno? To není nadsázka, osada se opravdu jmenuje <strong>Nebe</strong>.</p>
+      <p style="margin-top:1.4rem"><a href="#kontakt" class="btn">Chci se zeptat na termín</a></p>
+    </div>
+    <img src="photos/podzim-dum.jpg" alt="Hájenka Nebe na podzim" loading="lazy" data-r>
+  </div>
+</section>
+
+<section id="apartmany" style="background:var(--krem2)">
+  <div class="wrap">
+    <div class="center" data-r>
+      <div class="eyebrow">Ubytování</div>
+      <h2 class="title">Pět apartmánů, <em>18 lůžek</em></h2>
+      <p class="lead">Každý apartmán má vlastní kuchyňku (indukční vařič, mikrovlnka, lednice, konvice i nádobí), sprchový kout a toaletu. Povlečení a ručníky jsou v ceně.</p>
+    </div>
+    <div class="kgrid c5" data-r>
+      <div class="k"><div class="k-h"><h3>Himmelreich</h3><span class="sub">4 lůžka · podkroví</span></div><p>Podkrovní apartmán s výhledem do všech světových stran — nejblíž nebi.</p></div>
+      <div class="k"><div class="k-h"><h3>Nebe</h3><span class="sub">5 lůžek · 2 ložnice</span></div><p>Největší apartmán se dvěma ložnicemi a dvěma koupelnami — ideální pro rodinu.</p></div>
+      <div class="k"><div class="k-h"><h3>Hájenka</h3><span class="sub">4 lůžka · 2 ložnice</span></div><p>Přízemní apartmán se dvěma ložnicemi, pohodlný i pro delší pobyty.</p></div>
+      <div class="k"><div class="k-h"><h3>Lípa</h3><span class="sub">3 lůžka · 1. patro</span></div><p>Útulný apartmán s výhledem na rybníček a staletou lípu před domem.</p></div>
+      <div class="k"><div class="k-h"><h3>Louka</h3><span class="sub">2 lůžka · přízemí</span></div><p>Malý apartmán pro dva — tak akorát na romantický únik z města.</p></div>
+    </div>
+    <div class="intgal" data-r>
+      <img class="big" src="photos/int-loznice.jpg" alt="Ložnice apartmánu Hájenka" loading="lazy">
+      <img src="photos/int-kuchynka.jpg" alt="Kuchyňka s jídelním stolem" loading="lazy">
+      <img src="photos/int-pokoj2.jpg" alt="Pokoj apartmánu Hájenka" loading="lazy">
+      <img src="photos/int-posezeni.jpg" alt="Posezení v apartmánu" loading="lazy">
+      <img src="photos/int-sprcha.jpg" alt="Sprchový kout" loading="lazy">
+    </div>
+    <p class="pozn center" style="margin-top:.8rem" data-r>Nahlédněte dovnitř — na snímcích apartmán Hájenka.</p>
+
+    <div class="kgrid c3" data-r>
+      <div class="k"><div class="k-h"><h3><span class="em">🍳</span>Snídaně i polopenze</h3></div><p>Po domluvě snídaně, polopenze nebo snídaňové košíky až k apartmánu — ve spolupráci s Pensionem Hamrakoff.</p></div>
+      <div class="k"><div class="k-h"><h3><span class="em">🍷</span>Společenská místnost</h3></div><p>Bývalá konírna s barem — posezení, deskovky, večery s přáteli.</p></div>
+      <div class="k"><div class="k-h"><h3><span class="em">🔥</span>Ohniště a gril</h3></div><p>Venkovní posezení s ohništěm a grilem, prosklená veranda pro chladnější večery.</p></div>
+      <div class="k"><div class="k-h"><h3><span class="em">🚲</span>Lyžárna a kolárna</h3></div><p>Zázemí pro lyže i kola — a po houbách i sušička hub.</p></div>
+      <div class="k"><div class="k-h"><h3><span class="em">🐾</span>Mazlíčci vítáni</h3></div><p>Po předchozí domluvě — pes 250–450 Kč/noc, pelíšek s sebou.</p></div>
+      <div class="k"><div class="k-h"><h3><span class="em">🐴</span>Koně na pastvině</h3></div><p>Koně k hájence patří — a od léta 2027 chystáme i vyjížďky.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="galerie">
+  <div class="wrap">
+    <div class="center" data-r>
+      <div class="eyebrow">Galerie</div>
+      <h2 class="title">Nebe v každém <em>ročním období</em></h2>
+    </div>
+    <div class="gal" data-r>
+      <img class="w2" src="photos/dron-udoli.jpg" alt="Hájenka Nebe z dronu — samota v lesích" loading="lazy">
+      <img src="photos/kun.jpg" alt="Kůň na pastvině u hájenky" loading="lazy">
+      <img src="photos/veranda.jpg" alt="Prosklená veranda" loading="lazy">
+      <img src="photos/zapad-holubnik.jpg" alt="Západ slunce nad pastvinou" loading="lazy">
+      <img src="photos/zima-dum.jpg" alt="Hájenka v zimě" loading="lazy">
+      <img src="photos/vyhled-louka.jpg" alt="Výhled na šumavské louky" loading="lazy">
+      <img src="photos/hrib.jpg" alt="Houbaření kolem hájenky" loading="lazy">
+      <img src="photos/prijezd.jpg" alt="Příjezd k hájence" loading="lazy">
+      <img src="photos/ohniste.jpg" alt="Zahrada a okolí hájenky" loading="lazy">
+      <img src="photos/zima-zavej.jpg" alt="Šumavská zima na Nebi" loading="lazy">
+      <img src="photos/zapad-strom.jpg" alt="Večer nad hájenkou" loading="lazy">
+      <img class="w2" src="photos/dron-blizko.jpg" alt="Hájenka Nebe z výšky" loading="lazy">
+      <img src="photos/podzim-zapad.jpg" alt="Podzimní západ slunce" loading="lazy">
+      <img src="photos/dron-top.jpg" alt="Hájenka a okolní lesy z ptačí perspektivy" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<div class="band"><p data-r>„Klid, pohoda, vstřícnost a ochota."<br><span style="font-size:1rem;font-style:normal;letter-spacing:.12em;text-transform:uppercase">— z hodnocení našich hostů</span></p></div>
+
+<section id="okoli">
+  <div class="wrap">
+    <div class="center" data-r>
+      <div class="eyebrow">Okolí a aktivity</div>
+      <h2 class="title">Šumava za <em>dveřmi</em></h2>
+      <p class="lead">Les začíná pár kroků od domu. V létě turistika, kola a houbaření, v zimě běžky rovnou od hájenky a sjezdovky kousek autem.</p>
+    </div>
+    <div class="kgrid c4" data-r>
+      <div class="k"><div class="k-h"><h3><span class="em">⛷</span>Lyžování</h3></div><p>Kašperské Hory 3 km · Zadov 12 km · Špičák 30 km. Při dobré nadílce běžky přímo v okolí.</p></div>
+      <div class="k"><div class="k-h"><h3><span class="em">🥾</span>Turistika a kola</h3></div><p>Značené trasy na Huťskou horu, Poledník i Ždanidla, cyklotrasy všemi směry.</p></div>
+      <div class="k"><div class="k-h"><h3><span class="em">🍄</span>Houbaření</h3></div><p>Lesy kolem hájenky jsou houbařský ráj — a sušička hub je u nás připravená.</p></div>
+      <div class="k"><div class="k-h"><h3><span class="em">🏰</span>Výlety</h3></div><p>Hrad Kašperk, Kašperské Hory, Sušice, vrcholy a slatě NP Šumava.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="cenik" style="background:var(--krem2)">
+  <div class="wrap">
+    <div class="center" data-r>
+      <div class="eyebrow">Ceník</div>
+      <h2 class="title">Férové ceny <em>za noc</em></h2>
+    </div>
+    <div class="cen" data-r>
+      <div class="cr"><span>Dospělí</span><b>750 Kč / noc</b></div>
+      <div class="cr"><span>Děti 7–12 let</span><b>550 Kč / noc</b></div>
+      <div class="cr"><span>Děti 3–6 let</span><b>350 Kč / noc</b></div>
+      <div class="cr"><span>Děti do 2 let</span><b>150 Kč / noc</b></div>
+      <div class="cr"><span>Pes (po domluvě)</span><b>250–450 Kč / noc</b></div>
+      <div class="cr"><span>Zimní sezóna</span><b>pronájem celého objektu — cena dohodou</b></div>
+    </div>
+    <p class="pozn center" style="margin-top:1.2rem" data-r>Minimální délka pobytu 2 noci · povlečení a ručníky v ceně · WiFi zdarma · parkování přímo u domu · nekuřácký objekt</p>
+    <p class="center" style="margin-top:1.6rem" data-r><a href="tel:+420737618999" class="btn">Rezervovat — 737 618 999</a></p>
+  </div>
+</section>
+
+<section id="kontakt">
+  <div class="wrap">
+    <div class="center" data-r>
+      <div class="eyebrow">Kontakt</div>
+      <h2 class="title">Najdete nás <em>na Nebi</em></h2>
+    </div>
+    <div class="kont-grid">
+      <div data-r>
+        <div class="ku"><b>Adresa</b><br>Hájenka Nebe, Nebe 203<br>341 92 Kašperské Hory</div>
+        <div class="ku"><b>Telefon</b><br><a href="tel:+420737618999">737 618 999</a> — František Hail</div>
+        <div class="ku"><b>E-mail</b><br><a href="mailto:hajenkanebe@gmail.com">hajenkanebe@gmail.com</a></div>
+        <div class="ku"><b>GPS</b><br>49.14394 N, 13.55483 E</div>
+        <p class="pozn">Rezervace telefonicky nebo e-mailem — ozveme se obratem.</p>
+      </div>
+      <div data-r><iframe src="https://maps.google.com/maps?q=49.14394,13.55483&z=13&output=embed" loading="lazy" title="Mapa — Hájenka Nebe, Kašperské Hory"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><b style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:#fff">Hájenka Nebe</b> · místo, kde se zastaví čas</p>
+  <p style="margin-top:.4rem">Nebe 203, Kašperské Hory · <a href="tel:+420737618999">737 618 999</a> · <a href="mailto:hajenkanebe@gmail.com">hajenkanebe@gmail.com</a></p>
+  <p style="margin-top:1rem;font-size:.8rem;opacity:.7">© 2026 Hájenka Nebe — František Hail · web od <a href="https://strankyprovas.cz">StránkyProVás</a></p>
+</footer>
+
+<script>
+var obs=new IntersectionObserver(function(es){es.forEach(function(e,i){if(e.isIntersecting){setTimeout(function(){e.target.classList.add('vis')},i*60);obs.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('[data-r]').forEach(function(el){obs.observe(el)});
+setInterval(function(){document.querySelectorAll('[data-r]:not(.vis)').forEach(function(el){var r=el.getBoundingClientRect();if(r.top<innerHeight*1.05&&r.bottom>-40)el.classList.add('vis')})},800);
+document.getElementById('mnav').addEventListener('click',function(e){if(e.target.tagName==='A')this.classList.remove('open')});
+</script>
+<img src="https://strankyprovas.cz/track/d.php?s=penzion/hajenka-nebe" alt="" width="1" height="1" style="position:absolute;opacity:0" aria-hidden="true">
+</body>
+</html>
